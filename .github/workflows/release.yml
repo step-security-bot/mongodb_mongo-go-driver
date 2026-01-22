@@ -19,6 +19,9 @@ env:
   # Changes per branch
   SILK_ASSET_GROUP: mongodb-go-driver
   EVERGREEN_PROJECT: mongo-go-driver
+permissions:
+  contents: read
+
 jobs:
   pre-publish:
     environment: release
