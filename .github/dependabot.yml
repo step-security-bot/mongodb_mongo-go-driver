@@ -16,3 +16,43 @@ updates:
     directory: "/"
     schedule:
       interval: "monthly"
+
+  - package-ecosystem: docker
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: gomod
+    directory: /examples/_logger/logrus
+    schedule:
+      interval: daily
+
+  - package-ecosystem: gomod
+    directory: /examples/_logger/zap
+    schedule:
+      interval: daily
+
+  - package-ecosystem: gomod
+    directory: /examples/_logger/zerolog
+    schedule:
+      interval: daily
+
+  - package-ecosystem: gomod
+    directory: /internal/cmd/benchmark
+    schedule:
+      interval: daily
+
+  - package-ecosystem: gomod
+    directory: /internal/cmd/faas/awslambda/mongodb
+    schedule:
+      interval: daily
+
+  - package-ecosystem: gomod
+    directory: /internal/test/compilecheck
+    schedule:
+      interval: daily
+
+  - package-ecosystem: gomod
+    directory: /internal/test/goleak
+    schedule:
+      interval: daily

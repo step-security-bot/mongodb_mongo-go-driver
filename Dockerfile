@@ -1,5 +1,5 @@
 # Dockerfile for Go Driver local development.
-FROM golang:1.25.5-trixie AS base
+FROM golang:1.25.5-trixie@sha256:1763926ff08117bdf4c76182c02fecbcfc3086771169b2a03574273dde17fcee AS base
 
 # Build libmongocrypt in a separate build stage.
 FROM base AS libmongocrypt
