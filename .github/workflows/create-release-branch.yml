@@ -19,6 +19,9 @@ concurrency:
 defaults:
   run:
     shell: bash -eux {0}
+permissions:
+  contents: read
+
 jobs:
   create-branch:
     environment: release
